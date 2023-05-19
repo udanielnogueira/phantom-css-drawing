@@ -62,7 +62,7 @@ body {
     left: 9rem;
     /* talk about */
     transform: rotate(20deg);
-    animation: waving-1 2s alternate infinite ease-in-out;
+    animation: waving-1 2.5s alternate infinite ease-in-out;
 }
 
 .mao-esquerda {
@@ -74,7 +74,7 @@ body {
     top: 3rem;
     right: 4.5rem;
     transform: rotate(-20deg);
-    animation: waving-2 2s alternate infinite ease-in-out;
+    animation: waving-2 2.5s alternate infinite ease-in-out;
 }
 
 @keyframes waving-1 {
@@ -100,6 +100,6 @@ body {
         transform: scale(100%);
     }
     to {
-        transform: scale(120%);
+        transform: scale(130%);
     }
 }
