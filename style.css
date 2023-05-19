@@ -25,6 +25,10 @@ body {
     height: 10rem;
     background-color: white;
     border-radius: 50% 50% 0 0;
+    /* talk about */
+    /* alternate volta a animação */
+    /* ease-in-out suaviza o início e fim */
+    animation: fly 2s alternate infinite ease-in-out;
 }
 
 .olhos {
@@ -57,7 +61,8 @@ body {
     top: 3rem;
     left: 9rem;
     /* talk about */
-    transform: rotate(-10deg);
+    transform: rotate(20deg);
+    animation: waving-1 2s alternate infinite ease-in-out;
 }
 
 .mao-esquerda {
@@ -68,5 +73,33 @@ body {
     border-radius: 90% 0 0 90%;
     top: 3rem;
     right: 4.5rem;
-    transform: rotate(10deg);
+    transform: rotate(-20deg);
+    animation: waving-2 2s alternate infinite ease-in-out;
+}
+
+@keyframes waving-1 {
+    from {
+        transform: rotate(20);
+    }
+    to {
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes waving-2 {
+    from {
+        transform: rotate(-20);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes fly {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(120%);
+    }
 }
